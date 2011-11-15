@@ -74,7 +74,7 @@
 		<li>
 		<span class="accordian">
 			<h2>Biography</h2>
-			<p>My name is Stephen Cronin and I am a 19 year old from Boston, MA currently living in NYC trying to get myself out there in the web world. I have completed my freshman year at Parsons The New School for Design in the Design and Technology program.</p>
+			<p>I like big butt! My name is Stephen Cronin and I am a 19 year old from Boston, MA currently living in NYC trying to get myself out there in the web world. I have completed my freshman year at Parsons The New School for Design in the Design and Technology program.</p>
 			<p>In 2006, when I was 14, I was given my first personal computer. I quickly became immersed in the platform and soon began exploring programming and designing on the computer. After picking up the basics in Photoshop and Illustrator I moved onto Flash and Actionscript to create interactive designs.</p>
 			<p>During this time my friend and I became interested in creating our own T-shirt brand and, although the brand never went far, I learned the basics of silkscreening and designing for clothing. I wanted to learn more about print design and heard from a family friend about a non-profit located in Boston, called Artists for Humanity, that had numerous art studios, including silkscreening.</p>
 			<p class="quote">"Founded in 1991, Artists For Humanity’s mission is to bridge economic, racial and social divisions by providing underserved youth with the keys to self-sufficiency through paid employment in the arts."</p>
