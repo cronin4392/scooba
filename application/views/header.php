@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Scooba Steve Productions</title>
+<title>Scooba Steve Productionsdfsgsdf </title>
 
 <link rel="shortcut icon" href="<?php echo base_url() . 'favicon.ico'; ?>" />
 
