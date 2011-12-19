@@ -45,7 +45,7 @@
 		<li>
 			<div class="button">
 				<a href="<?php echo $project->link; ?>">
-					Visit Project Site
+					Visit Project Site<span class="icon">&nbsp;&nbsp;K</span>
 				</a>
 			</div>
 		</li>

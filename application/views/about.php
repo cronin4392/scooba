@@ -74,7 +74,7 @@
 		<li>
 		<span class="accordian">
 			<h2>Biography</h2>
-			<p>I like big butt! My name is Stephen Cronin and I am a 19 year old from Boston, MA currently living in NYC trying to get myself out there in the web world. I have completed my freshman year at Parsons The New School for Design in the Design and Technology program.</p>
+			<p>My name is Stephen Cronin and I am a 19 year old from Boston, MA currently living in NYC trying to get myself out there in the web world. I have completed my freshman year at Parsons The New School for Design in the Design and Technology program.</p>
 			<p>In 2006, when I was 14, I was given my first personal computer. I quickly became immersed in the platform and soon began exploring programming and designing on the computer. After picking up the basics in Photoshop and Illustrator I moved onto Flash and Actionscript to create interactive designs.</p>
 			<p>During this time my friend and I became interested in creating our own T-shirt brand and, although the brand never went far, I learned the basics of silkscreening and designing for clothing. I wanted to learn more about print design and heard from a family friend about a non-profit located in Boston, called Artists for Humanity, that had numerous art studios, including silkscreening.</p>
 			<p class="quote">"Founded in 1991, Artists For Humanity’s mission is to bridge economic, racial and social divisions by providing underserved youth with the keys to self-sufficiency through paid employment in the arts."</p>
@@ -85,12 +85,11 @@
 		</li>
 		<li>
 			<h2>Music</h2>
-			<p>
 			<?php
 				$size = 5;
 			?>
 			<div class="slideshow">
-			<ul class="container" style="width:<?php echo $size*118; ?>px">
+			<ul class="container" >
 				<?php 
 				    
 					$artists_week = simplexml_load_file('http://ws.audioscrobbler.com/2.0/user/cronin4392/topartists.xml?period=3month');
@@ -104,7 +103,7 @@
 								$image = $a_image;	
 						}
 						if($rank<=5) {
-							echo '<li><img src="'.$image.'" />
+							echo '<li><div class="image"><a href="'.$artist->url.'"><img src="'.$image.'" /></a></div>
 							<p><b><a href="'.$artist->url.'">'.$artist->name.'</a></b>
 							<br>'.$artist->playcount.' Plays
 							</p></li>';
@@ -115,7 +114,6 @@
 			</div>
 		</li>
 		</ul>
-		</p>
 	</div>
 	<div class="grid_1 omega">
 		<ul class="copy">

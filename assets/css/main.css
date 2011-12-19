@@ -1,7 +1,4 @@
 /** GENERAL STYLES **/
-.admin_page .organize {
-  position: inherit;
-}
 .admin_page .organize li .image {
   float: left;
   max-width: 75px;
@@ -36,6 +33,7 @@
 .box_3d_up {
   box-shadow: 0;
   box-shadow: 1px 0px 0px #303030, 0px -1px 0px #303030, 0px 0px 1px #303030, -1px 1px 0px #303030, -1px 2px 0px #4d4d4d, -2px 1px 0px #a0a0a0, -2px 2px 0px #303030, -2px 3px 0px #4d4d4d, -3px 2px 0px #a0a0a0, -3px 3px 0px #303030, -3px 4px 0px #4d4d4d, -4px 3px 0px #a0a0a0, -4px 4px 0px #303030, -4px 5px 0px #4d4d4d, -5px 4px 0px #a0a0a0, -5px 6px 0px #4d4d4d, -6px 5px 0px #a0a0a0, -6px 6px 0px #303030, -7px 7px 0px #303030, -2px 0px 0px #303030, 0px 2px 0px #303030, -3px 1px 0px #303030, -1px 3px 0px #303030, -4px 2px 0px #303030, -2px 4px 0px #303030, -5px 3px 0px #303030, -3px 5px 0px #303030, -6px 4px 0px #303030, -4px 6px 0px #303030, -7px 5px 0px #303030, -5px 7px 0px #303030, -7px 5px 0px #303030, -6px 5px 0px #303030;
+  behavior: url('../css/PIE.htc');
   z-index: 5;
   left: 7px;
   bottom: 7px;
@@ -50,11 +48,18 @@
   left: 0px;
   bottom: 0px;
 }
+@font-face {
+  font-family: 'WebSymbolsRegular';
+  src: url('../fonts/WebSymbols/websymbols-regular-webfont.eot');
+  src: url('../fonts/WebSymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/WebSymbols/websymbols-regular-webfont.woff') format('woff'), url('../fonts/WebSymbols/websymbols-regular-webfont.ttf') format('truetype'), url('../fonts/WebSymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+}
 /** GENERAL STYLES **/
 body {
   /*background-image: url("../images/backgrounds/white_carbon.png");*/
 
-  font-family: 'Open Sans', "Trebuchet MS", sans-serif;
+  /** font-family: 'Open Sans', "Trebuchet MS", sans-serif; */
+
+  font-family: 'Droid Sans', sans-serif;
   font-size: 14px;
   line-height: 1.4em;
   color: #a0a0a0;
@@ -89,6 +94,12 @@ body .container p  + p {
 body .container p.quote {
   font-style: italic;
   margin-left: 1em;
+}
+body .container .icon {
+  font-family: 'WebSymbolsRegular', Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  opacity: .9;
 }
 body .container img {
   display: block;
@@ -198,7 +209,7 @@ body .container  > header nav .button {
 }
 body .container  > header nav {
   margin: 0 auto;
-  width: 625px;
+  width: 640px;
 }
 body .container  > header nav li {
   float: left;
@@ -224,6 +235,15 @@ body .container  > section > nav > .button_set {
 body .container  > section > nav > .button_set:last-child {
   margin-right: 0px;
 }
+body .container .masonry li {
+  margin: 0;
+  overflow: hidden;
+  width: 226px;
+}
+body .container .masonry li img {
+  display: block;
+  width: 100%;
+}
 body .container .items li {
   margin-bottom: 1em;
   position: relative;
@@ -243,7 +263,6 @@ body .container .items li .caption {
   background-color: #fff;
   border-top: 1px solid #cccccc;
   font-size: 12px;
-  height: 17px;
   overflow: hidden;
   padding: 7px;
   position: relative;
@@ -251,11 +270,6 @@ body .container .items li .caption {
 }
 body .container .items li .title {
   color: #303030;
-  float: left;
-}
-body .container .items li .tag {
-  float: right;
-  max-width: 38%;
 }
 body .container .items li .tag, body .container .items li .tag a {
   color: #a0a0a0;
@@ -275,16 +289,22 @@ body .container .small li .image:hover {
   opacity: 1;
 }
 body .container .small li .title {
+  float: left;
   font-weight: bold;
   max-width: 62%;
 }
 body .container .small li .tag {
+  float: right;
   max-width: 38%;
+}
+body .container .small li .caption {
+  height: 17px;
 }
 body .container .small li:hover {
   opacity: 1;
   box-shadow: 0;
   box-shadow: 1px 0px 0px #303030, 0px -1px 0px #303030, 0px 0px 1px #303030, -1px 1px 0px #303030, -1px 2px 0px #4d4d4d, -2px 1px 0px #a0a0a0, -2px 2px 0px #303030, -2px 3px 0px #4d4d4d, -3px 2px 0px #a0a0a0, -3px 3px 0px #303030, -3px 4px 0px #4d4d4d, -4px 3px 0px #a0a0a0, -4px 4px 0px #303030, -4px 5px 0px #4d4d4d, -5px 4px 0px #a0a0a0, -5px 6px 0px #4d4d4d, -6px 5px 0px #a0a0a0, -6px 6px 0px #303030, -7px 7px 0px #303030, -2px 0px 0px #303030, 0px 2px 0px #303030, -3px 1px 0px #303030, -1px 3px 0px #303030, -4px 2px 0px #303030, -2px 4px 0px #303030, -5px 3px 0px #303030, -3px 5px 0px #303030, -6px 4px 0px #303030, -4px 6px 0px #303030, -7px 5px 0px #303030, -5px 7px 0px #303030, -7px 5px 0px #303030, -6px 5px 0px #303030;
+  behavior: url('../css/PIE.htc');
   z-index: 5;
   left: 7px;
   bottom: 7px;
@@ -426,6 +446,7 @@ body .container .button a {
   background-color: #fff;
   box-shadow: 0;
   box-shadow: 1px 0px 0px #303030, 0px -1px 0px #303030, 0px 0px 1px #303030, -1px 1px 0px #303030, -1px 2px 0px #4d4d4d, -2px 1px 0px #a0a0a0, -2px 2px 0px #303030, -2px 3px 0px #4d4d4d, -3px 2px 0px #a0a0a0, -3px 3px 0px #303030, -3px 4px 0px #4d4d4d, -4px 3px 0px #a0a0a0, -4px 4px 0px #303030, -4px 5px 0px #4d4d4d, -5px 4px 0px #a0a0a0, -5px 6px 0px #4d4d4d, -6px 5px 0px #a0a0a0, -6px 6px 0px #303030, -7px 7px 0px #303030, -2px 0px 0px #303030, 0px 2px 0px #303030, -3px 1px 0px #303030, -1px 3px 0px #303030, -4px 2px 0px #303030, -2px 4px 0px #303030, -5px 3px 0px #303030, -3px 5px 0px #303030, -6px 4px 0px #303030, -4px 6px 0px #303030, -7px 5px 0px #303030, -5px 7px 0px #303030, -7px 5px 0px #303030, -6px 5px 0px #303030;
+  behavior: url('../css/PIE.htc');
   z-index: 5;
   left: 7px;
   bottom: 7px;
@@ -462,18 +483,25 @@ body .container .slideshow {
   width: 100%;
 }
 body .container .slideshow .container {
-  overflow: visible;
+  overflow: hidden;
   width: auto;
 }
 body .container .slideshow .container li {
   float: left;
   margin-right: 7px;
-  width: 111px;
+  width: 135px;
 }
-body .container .accordian p:first-of-type {
+body .container .slideshow .container li:last-child {
+  margin-right: 0px;
+}
+body .container .slideshow .container li .image {
+  height: 70px;
+  overflow: hidden;
+}
+body .container .closed p:first-of-type {
   display: inline;
 }
-body .container .accordian p {
+body .container .closed p {
   display: none;
 }
 /** END OF BODY */

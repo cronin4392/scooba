@@ -7,7 +7,7 @@
 		<?php if(isset($prev_project)) { ?>
 			<div class="button prev">
 				<a href="<?php echo site_url(); ?>/portfolio/item/<?php echo $prev_project->img; ?>">
-					<?php echo $prev_project->name;?>
+					<?php echo $prev_project->name;?>&nbsp;&nbsp;<span class="icon">)</span>
 				</a>
 			</div>
 		<?php } else {?>
@@ -16,7 +16,7 @@
 		<?php if(isset($next_project)) { ?>
 			<div class="button next">
 			<a href="<?php echo site_url(); ?>/portfolio/item/<?php echo $next_project->img; ?>">
-				<?php echo $next_project->name;?>
+				<span class="icon">(</span>&nbsp;&nbsp;<?php echo $next_project->name;?>
 			</a>
 			</div>
 		<?php } else {?>
@@ -27,7 +27,7 @@
 		<div class="left">
 		<div class="button">
 			<a href="<?php echo site_url(); ?>/portfolio/">
-			Portfolio
+			<span class="icon">:</span>&nbsp;&nbsp;Portfolio
 			</a>
 		</div>
 		</div>

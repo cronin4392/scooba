@@ -16,9 +16,11 @@
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.quicksand.js"></script>
 
-<script src="<?php echo base_url(); ?>assets/js/canvas.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/canvas.js"></script>
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/filter.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/libs/jquery.masonry.min.js"></script>
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/myCode.js"></script>
 

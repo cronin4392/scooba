@@ -38,7 +38,7 @@
 | the active record class
 */
 $url = (!empty($_SERVER['HTTPS'])) ? $_SERVER['SERVER_NAME'] : $_SERVER['SERVER_NAME'];
-if ($url == "localhost")
+if ($url == "localhost" || $url == "scooba.steve")
 	$active_group = 'local';
 else
 	$active_group = 'server';
@@ -46,7 +46,7 @@ $active_record = TRUE;
 
 $db['local']['hostname'] = 'localhost';
 $db['local']['username'] = 'root';
-$db['local']['password'] = '';
+$db['local']['password'] = 'root';
 $db['local']['database'] = 'scooba_ci_portfolio';
 $db['local']['dbdriver'] = 'mysql';
 $db['local']['dbprefix'] = '';
