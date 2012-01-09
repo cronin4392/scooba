@@ -48,7 +48,11 @@
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-<script src="<?php echo base_url(); ?>assets/js/libs/modernizr-2.0.6.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/libs/modernizr.custom.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
 
 <script type="text/javascript">
 

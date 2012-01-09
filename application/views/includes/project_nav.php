@@ -3,11 +3,11 @@
 		
 		<div class="right">
 		
-		&nbsp;
 		<?php if(isset($prev_project)) { ?>
 			<div class="button prev">
 				<a href="<?php echo site_url(); ?>/portfolio/item/<?php echo $prev_project->img; ?>">
-					<?php echo $prev_project->name;?>&nbsp;&nbsp;<span class="icon">)</span>
+					<?php echo $prev_project->name;?>
+					<?php /** &nbsp;&nbsp;<span class="icon">)</span> */ ?>
 				</a>
 			</div>
 		<?php } else {?>
@@ -16,7 +16,8 @@
 		<?php if(isset($next_project)) { ?>
 			<div class="button next">
 			<a href="<?php echo site_url(); ?>/portfolio/item/<?php echo $next_project->img; ?>">
-				<span class="icon">(</span>&nbsp;&nbsp;<?php echo $next_project->name;?>
+				<?php /** <span class="icon">(</span>&nbsp;&nbsp; */ ?>
+				<?php echo $next_project->name;?>
 			</a>
 			</div>
 		<?php } else {?>

@@ -49,7 +49,7 @@ $(window).load(function(){
 			// options
 			itemSelector : 'li',
 			columnWidth : 226,
-			gutterWidth : 14,
+			gutterWidth : 14
 		});
 	});
 });

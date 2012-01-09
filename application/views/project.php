@@ -6,7 +6,7 @@
 	
 	$data["next_project"] = $this->portfolio_model->get_next_project($position);
 	$data["prev_project"] = $this->portfolio_model->get_prev_project($position);
-	$this->load->view('includes/nav', $data);
+	$this->load->view('includes/project_nav', $data);
 ?>
 <section class="grid_4">
 <ul class="grid_3 items alpha">
@@ -59,5 +59,5 @@
 </div>
 </section>
 <?php
-	$this->load->view('includes/nav', $data);
+	$this->load->view('includes/project_nav', $data);
 ?>

@@ -3,7 +3,7 @@
 	<h1 class="">
 		<canvas id="headerCanvas" width="946" height="200">  		
 			<a href="<?php echo base_url(); ?>">
-				<img src="<?php echo base_url() . 'assets/images/logo_block_big.gif';?>" width="946" alt="<?php print $settings['site_name']; ?>" />
+				<img src="<?php echo base_url() . 'assets/images/canvas_logo.png';?>" width="946" alt="<?php print $settings['site_name']; ?>" />
 			</a>
 		</canvas>
 	</h1>
@@ -17,11 +17,11 @@
 		$url =  substr(current_url(),$url_len);
 					
 		$names[] = 'portfolio';
-		$links[] = base_url() . 'index.php';
+		$links[] = base_url() . '';
 		$names[] = 'type';
-		$links[] = base_url() . 'index.php/type';
+		$links[] = base_url() . 'type';
 		$names[] = 'about';
-		$links[] = base_url() . 'index.php/about';
+		$links[] = base_url() . 'about';
 		$names[] = 'resume';
 		$links[] = base_url() . 'assets/files/SCronin_Resume.pdf';
 		$names[] = 'contact';
@@ -44,6 +44,7 @@
 			
 			$this->portfolio_model->create_nav_links($names,$links,$selected);
 		?>
+		<li class="clear"></li>
 		</ul>
 	</nav>
 </header>

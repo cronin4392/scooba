@@ -113,6 +113,7 @@ body .container a:hover {
   text-decoration: underline;
 }
 body .container h1 {
+  cursor: pointer;
   color: #ffde4d;
   font-size: 1.62em;
   letter-spacing: 1px;
@@ -184,6 +185,9 @@ body .container  > header > h2, body .container  > footer > h2 {
   margin: 1em 0;
   text-align: center;
 }
+body .container  > footer > img {
+  padding-top: 1em;
+}
 body .container  > section {
   border-bottom: 1px solid #cccccc;
   margin-bottom: 1em;
@@ -208,8 +212,9 @@ body .container  > header nav .button {
   font-size: 1.4em;
 }
 body .container  > header nav {
+  display: table;
   margin: 0 auto;
-  width: 640px;
+  width: auto;
 }
 body .container  > header nav li {
   float: left;
@@ -223,6 +228,9 @@ body .container  > header nav._5 li a {
 body .container  > section nav  > * {
   display: inline-block;
 }
+body .container  > section nav  > .right, body .container  > section nav  > .left {
+  max-width: 48%;
+}
 body .container  > section nav  > .right > * {
   float: right;
 }
@@ -235,14 +243,22 @@ body .container  > section > nav > .button_set {
 body .container  > section > nav > .button_set:last-child {
   margin-right: 0px;
 }
-body .container .masonry li {
-  margin: 0;
-  overflow: hidden;
-  width: 226px;
+body .container .masonry {
+  margin-left: -7px;
 }
-body .container .masonry li img {
-  display: block;
-  width: 100%;
+body .container .masonry li {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  box-shadow: 1px 0px 1px #4d4d4d, 0px -1px 1px #4d4d4d, -1px 0px 1px #4d4d4d, 0px 1px 1px #4d4d4d;
+  /** margin: 0;
+			overflow: hidden;
+			width: 226px;
+			
+			img {
+				display: block;
+				width: 100%;
+			} */
+
 }
 body .container .items li {
   margin-bottom: 1em;

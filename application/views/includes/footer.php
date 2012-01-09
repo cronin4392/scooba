@@ -1,5 +1,6 @@
 <footer class="grid_4">
 <h2>Copyright 2011 &nbsp; © &nbsp; Stephen Cronin</h2>
+<img src="<?php echo base_url() . 'assets/images/steve_footer.png';?>" width="946" alt="Steve" />
 </footer>
 </div><!-- CLOSE .container_5 -->
 </body>
