@@ -121,11 +121,17 @@ body {
 			opacity: .9;
 		}
 		
+		.image a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+		
 		img {
 		  display: block;
 		  max-width: 100%;
 		}
-		a, a:hover, a:visited {
+		a, a:hover, a:visited, a:active {
 			position: relative;
 			text-decoration: none;
 		}
@@ -133,7 +139,6 @@ body {
 		  text-decoration: underline;
 		}
 		h1 {
-		  cursor: pointer;
 		  color: @yellow;
 		  font-size: 1.62em;
 		  letter-spacing: 1px;
@@ -201,6 +206,9 @@ body {
 		
 		}
 		#myCanvas {
+			cursor: pointer;
+		}
+		& > header > h1 {
 			cursor: pointer;
 		}
 		& > header > h1, & > header p {
@@ -299,11 +307,17 @@ body {
 		.items li {
 			margin-bottom: 1em;
 			position: relative;
-			.box_3d_down;
-			.transition;
+			@color: @dark-gray;
+			@fade: 1px;
+			box-shadow:
+			1px 0px @fade @color,
+			0px -1px @fade @color,
+			-1px 0px @fade @color,
+			0px 1px @fade @color;
 		}
-		items li a {
+		.items li a {
 		  z-index: 5;
+		  text-decoration: none;
 		}
 		.items li .caption {
 		  background-color: #fff;
@@ -326,6 +340,8 @@ body {
 		}
 		.small li {
 			opacity: 1;
+			.box_3d_down;
+			.transition;
 			.image {
 				opacity: .8;
 				z-index: -1;
@@ -551,8 +567,10 @@ body {
 				}
 				
 				.image {
-					height: 70px;
+					background-color: @gray;
+					height: 84px;
 					overflow: hidden;
+					margin-bottom: .2em;
 				}
 			}
 		

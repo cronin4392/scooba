@@ -12,8 +12,9 @@
 <ul class="grid_3 items alpha">
 	<?php foreach($images as $image) : ?>
 	<li>
+	
 	<?php if($project->link!="") { ?>
-		<a href="<?php echo $project->link; ?>">
+		<a target="_BLANK" href="<?php echo $project->link; ?>">
 	<?php } else { ?>
 		<a href="<?php echo site_url(); ?>/portfolio/item/<?php echo $project->img;?>/<?php echo $image->position; ?>">
 	<?php } ?>
@@ -44,7 +45,7 @@
 		<?php if($project->link!="") { ?>
 		<li>
 			<div class="button">
-				<a href="<?php echo $project->link; ?>">
+				<a target="_BLANK" href="<?php echo $project->link; ?>">
 					Visit Project Site<span class="icon">&nbsp;&nbsp;K</span>
 				</a>
 			</div>

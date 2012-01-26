@@ -157,7 +157,10 @@ class Portfolio_model extends CI_Model {
 		
 		for($i=0;$i<$amount;$i++):
 			if(isset($links[$i])) {
-				$echo .= '<a href="'.$links[$i].'">';
+				$echo .= '<a href="'.$links[$i].'"';
+				if(strpos($links[$i], 'http')!==false)
+					$echo .= 'target="_BLANK"';
+				$echo .= '>';
 			}
 			$echo .= $names[$i];
 			if(isset($links[$i])) {

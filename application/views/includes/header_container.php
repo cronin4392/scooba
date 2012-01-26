@@ -18,8 +18,8 @@
 					
 		$names[] = 'portfolio';
 		$links[] = base_url() . '';
-		$names[] = 'type';
-		$links[] = base_url() . 'type';
+		$names[] = 'play';
+		$links[] = base_url() . 'play';
 		$names[] = 'about';
 		$links[] = base_url() . 'about';
 		$names[] = 'resume';

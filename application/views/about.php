@@ -99,15 +99,15 @@
 						$rank = $artist->attributes()->rank;
 						foreach ($artist->image as $a_image) {
 							$size = $a_image->attributes()->size;
-							if($size=="large") 
+							if($size=="extralarge") 
 								$image = $a_image;	
 						}
-						if($rank<=5) {
-							echo '<li><div class="image"><a href="'.$artist->url.'"><img src="'.$image.'" /></a></div>
-							<p><b><a href="'.$artist->url.'">'.$artist->name.'</a></b>
-							<br>'.$artist->playcount.' Plays
-							</p></li>';
-						}
+						if($rank<=5) { ?>
+							<li><div class="image"><a href="<?= $artist->url ?>"><img src="<?= $image ?>" /></a></div>
+							<p><b><a target="_BLANK" href="<?= $artist->url ?>"><?= $artist->name ?></a></b>
+							<br><?= $artist->playcount?> Plays
+							</p></li>
+						<?php }
 					}
 				?>
 			</ul>
@@ -162,12 +162,16 @@
 					$names = array();
 					$links = array();
 					
+					$names[] = "LinkedIn";
+					$links[] = "http://www.linkedin.com/pub/stephen-cronin/44/860/28b";
 					$names[] = 'Tumblr';
 					$links[] = "http://www.scoobasteve.tumblr.com";
 					$names[] = 'Delicious';
 					$links[] = "http://www.delicious.com/cronin4392";
 					$names[] = 'Last.fm';
 					$links[] = "http://www.last.fm/cronin4392";
+					$names[] = 'Forrst';
+					$links[] = "https://forrst.com/people/cronin4392";
 					
 					$this->portfolio_model->create_links($names,$links);
 				?>

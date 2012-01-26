@@ -101,11 +101,19 @@ body .container .icon {
   line-height: 1.1em;
   opacity: .9;
 }
+body .container .image a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 body .container img {
   display: block;
   max-width: 100%;
 }
-body .container a, body .container a:hover, body .container a:visited {
+body .container a,
+body .container a:hover,
+body .container a:visited,
+body .container a:active {
   position: relative;
   text-decoration: none;
 }
@@ -113,7 +121,6 @@ body .container a:hover {
   text-decoration: underline;
 }
 body .container h1 {
-  cursor: pointer;
   color: #ffde4d;
   font-size: 1.62em;
   letter-spacing: 1px;
@@ -175,6 +182,9 @@ body .container  > header > * {
 
 }
 body .container #myCanvas {
+  cursor: pointer;
+}
+body .container  > header > h1 {
   cursor: pointer;
 }
 body .container  > header > h1, body .container  > header p {
@@ -264,16 +274,10 @@ body .container .items li {
   margin-bottom: 1em;
   position: relative;
   box-shadow: 1px 0px 1px #4d4d4d, 0px -1px 1px #4d4d4d, -1px 0px 1px #4d4d4d, 0px 1px 1px #4d4d4d;
-  z-index: 0;
-  left: 0px;
-  bottom: 0px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
 }
-body .container items li a {
+body .container .items li a {
   z-index: 5;
+  text-decoration: none;
 }
 body .container .items li .caption {
   background-color: #fff;
@@ -292,6 +296,14 @@ body .container .items li .tag, body .container .items li .tag a {
 }
 body .container .small li {
   opacity: 1;
+  box-shadow: 1px 0px 1px #4d4d4d, 0px -1px 1px #4d4d4d, -1px 0px 1px #4d4d4d, 0px 1px 1px #4d4d4d;
+  z-index: 0;
+  left: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
 }
 body .container .small li .image {
   opacity: .8;
@@ -511,8 +523,10 @@ body .container .slideshow .container li:last-child {
   margin-right: 0px;
 }
 body .container .slideshow .container li .image {
-  height: 70px;
+  background-color: #a0a0a0;
+  height: 84px;
   overflow: hidden;
+  margin-bottom: .2em;
 }
 body .container .closed p:first-of-type {
   display: inline;
