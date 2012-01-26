@@ -1,11 +1,11 @@
 <div class="container container_4">
 <header class="grid_4">
 	<h1 class="">
-		<canvas id="headerCanvas" width="946" height="200">  		
+		<!-- <canvas id="headerCanvas" width="946" height="200"> --> 		
 			<a href="<?php echo base_url(); ?>">
 				<img src="<?php echo base_url() . 'assets/images/canvas_logo.png';?>" width="946" alt="<?php print $settings['site_name']; ?>" />
 			</a>
-		</canvas>
+		<!-- </canvas> -->
 	</h1>
 	<h2>Stephen Cronin &nbsp; / &nbsp; Designer - Developer &nbsp; / &nbsp; New York, NY - Boston, MA</h2>
 	<?php

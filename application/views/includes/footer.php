@@ -17,7 +17,7 @@
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.quicksand.js"></script>
 
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/canvas.js"></script>
+<!-- <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/canvas.js"></script> -->
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/filter.js"></script>
 

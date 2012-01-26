@@ -53,6 +53,17 @@
   src: url('../fonts/WebSymbols/websymbols-regular-webfont.eot');
   src: url('../fonts/WebSymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/WebSymbols/websymbols-regular-webfont.woff') format('woff'), url('../fonts/WebSymbols/websymbols-regular-webfont.ttf') format('truetype'), url('../fonts/WebSymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
 }
+#IE_warning {
+  background-color: #ffde4d;
+  border-top: 1px solid #a0a0a0;
+  color: #4d4d4d;
+  padding: 1em 0;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
 /** GENERAL STYLES **/
 body {
   /*background-image: url("../images/backgrounds/white_carbon.png");*/
